@@ -34,15 +34,12 @@
 
 	<!-- jar依赖 -->
 	<dependencies>
-		<!-- 依赖工具类 -->
+	<!-- 依赖工具类 -->
 		<dependency>
-			<groupId>com.bobo.common</groupId>
-			<artifactId>bobo-utils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-
+		 <groupId>com.fangxupeng</groupId>
+		  <artifactId>fangxupeng.utils</artifactId>
+		  <version>0.0.1-SNAPSHOT</version> 
 		</dependency>
-
-
 		<!-- spring 及springMVC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -236,8 +233,8 @@
 			<version>1.12.1</version>
 		</dependency>
 	</dependencies>
-
-
+	
+	
 	<!-- 构建项目 -->
 	<build>
 		<plugins>
@@ -262,7 +259,7 @@
 				<configuration>
 					<httpConnector>
 						<!-- 项目端口号 -->
-						<port>80</port>
+						<port>90</port>
 						<!--项目路径 -->
 						<host>localhost</host>
 					</httpConnector>
@@ -273,15 +270,18 @@
 							<contextPath>/pic/</contextPath>
 
 							<!-- 物理路径 -->
-							<resourceBase>d:/pic/</resourceBase>
+							<resourceBase>/resource/pic/</resourceBase>
 						</jettyWebAppContext>
 
 					</contextHandlers>
-					<!-- 扫描的配置. 如果项目源码改变,1秒后重启jetty -->
+                    <!-- 扫描的配置. -->
 					<scanIntervalSeconds>1</scanIntervalSeconds>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+
   
-</project>
+  
+	</project>
