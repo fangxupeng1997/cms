@@ -1,6 +1,6 @@
 package com.fangxupeng.cms.controller;
 
-import java.net.HttpCookie;
+
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
@@ -21,7 +21,6 @@ import com.fangxupeng.cms.util.CMSException;
 import com.fangxupeng.cms.util.CookieUtil;
 import com.fangxupeng.utils.StringUtil;
 
-import net.sf.jsqlparser.expression.DateTimeLiteralExpression.DateTime;
 
 //用户登录注册模块
 @RequestMapping("passport")

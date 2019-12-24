@@ -48,7 +48,7 @@
 
 			</div>
 			<div class="col-md-8">
-				<img alt="" src="/resource/images/login-bg.jpg"
+				<img alt="" src="/resource/images/261b08b2bf4a5855b3335f3af01d1cd1.jpg"
 					style="width: 450px; height: 350px" class="rounded-circle">
 			</div>
 		</div>

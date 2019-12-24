@@ -1,5 +1,8 @@
 package com.fangxupeng.cms.util;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 public class CookieUtil {
 
 	// 写入 cookie
-	public static void addCookie(HttpServletResponse response, String name, String value, int maxAge) {
+	public static void addCookie(HttpServletResponse response, String name, String value, int maxAge) throws UnsupportedEncodingException {
+		
+		String valueEncode = URLEncoder.encode(value,"UTF-8");
 		Cookie cookie = new Cookie(name, value);
 		cookie.setPath("/");
 		if (maxAge > 0) {
